@@ -6,3 +6,9 @@ resource "aws_vpc" "environment-example" {
 	  name = "terraform-aws-vpc-example"
 	}
 }
+
+resource "aws_subnet" "" {
+	name = ""
+	cidr_block = ""
+	vpc_id = "${aws_vpc.environment-example.id}"
+}
